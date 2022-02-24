@@ -82,33 +82,6 @@ function change(e) {
     changeLi.classList.add("completed");
 }
 
-function addtoList(e){
-    
-        //////created li.
-        alert.innerHTML = alertSuccess;
-        const li = document.createElement("li");
-        li.innerHTML = task.value;
-        li.id = liID;
-        /////created delete button.
-        const deleteButton = document.createElement("button");
-        deleteButton.classList.add("float-end");
-        deleteButton.innerHTML = "<i class='fa-thin fa-plus'></i>";
-        deleteButton.addEventListener("click", deleteItem);
-
-        ///// created complete button
-        const completeButton = document.createElement("button");
-        completeButton.classList.add("float-end");
-        completeButton.innerHTML = "<i class='fa-solid fa-circle-check'></i>";
-        completeButton.addEventListener("click", change);
-
-        ////// added li,delete button and complete button into list.
-        li.appendChild(deleteButton);
-        li.appendChild(completeButton);
-        list.appendChild(li);
-        task.value = "";
-        closeAlert();
-    
-}
 
 
 
